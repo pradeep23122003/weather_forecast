@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Weather Info</h1>
+            <div class="search-box">
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="Enter city name" />
+                <button class="form-btn" onclick="getWeather()">Get Weather Info</button>
+                <button class="form-btn" onclick="getLocation()">Use My Location</button>
+            </div>
+            <div id="result">
+                <!-- Weather info will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

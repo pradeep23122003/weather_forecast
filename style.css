@@ -1,0 +1,254 @@
+body {
+    font-family: "Titillium Web", sans-serif;
+    color: #080404;
+    background: #f7f7f7;
+    /* Light background for better contrast */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* Prevent scrollbars */
+}
+
+.container {
+    max-width: 100%;
+    width: 90vw;
+    /* Adjust width for horizontal expansion */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.box {
+    border: 0.7px solid #636363;
+    border-radius: 8px;
+    background-image: url("media/undraw_weather_app_i5sm.svg");
+    background-size: 150px;
+    background-position: 100px 170px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+    text-align: center;
+}
+
+.search-box input {
+    width: 80%;
+    /* Adjust width for smaller screens */
+    padding: 8px;
+    border: 0.7px solid #636363;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.form-btn {
+    margin-top: 10px;
+    padding: 8px;
+    border: 0.7px solid #636363;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-btn:hover {
+    background: aqua;
+}
+
+.celsius-btn,
+.fahrenheit-btn {
+    border-radius: 10px;
+    padding: 6px;
+    margin-left: 10px;
+    background: #f7e4df;
+    border: 0.7px solid #636363;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.celsius-btn:hover,
+.fahrenheit-btn:hover {
+    background: #e2d0c6;
+}
+
+h1 {
+    font-size: 28px;
+    padding: 15px 0 5px;
+    text-align: center;
+}
+
+.date-description {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.current-temp {
+    font-size: 35px;
+    text-align: center;
+}
+
+.weather-unit {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.weather-extra {
+    font-size: 14px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.forecast div {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.forecast img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.hour-forecast {
+    text-align: center;
+    margin: 50px 0 15px 0;
+    padding: 5px;
+}
+
+.hour-forecast img {
+    width: 100%;
+}
+
+.author a {
+    color: #636363;
+    text-decoration: underline;
+}
+
+.author a:hover {
+    color: #000000;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95vw;
+    }
+
+    .search-box input {
+        width: 90%;
+    }
+
+    .form-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .celsius-btn,
+    .fahrenheit-btn {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .current-temp {
+        font-size: 28px;
+    }
+
+    .weather-unit {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .forecast div {
+        padding: 8px;
+    }
+
+    .forecast img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-box input {
+        width: 100%;
+    }
+
+    .form-btn {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .celsius-btn,
+    .fahrenheit-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .current-temp {
+        font-size: 24px;
+    }
+
+    .weather-unit {
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .forecast div {
+        padding: 6px;
+    }
+
+    .forecast img {
+        width: 30px;
+        height: 30px;
+    }
+}
